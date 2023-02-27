@@ -2,6 +2,7 @@
   background: black;
   height: 100px;
   width: 100vw;
+  position: fixed;
 }
 .header-content {
   display: flex;
@@ -21,7 +22,4 @@
 .header-item:hover {
   cursor: pointer;
   background-color: grey;
-}
-.test {
-  height: 100%;
 }
