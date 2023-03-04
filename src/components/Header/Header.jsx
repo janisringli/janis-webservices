@@ -1,7 +1,11 @@
 import "./Header.css";
 import logo from "../../assets/img/logo.png";
+import { useEffect } from "react";
 
 function Header() {
+  useEffect(() => {
+    setCurrent();
+  }, []);
   function setCurrent() {
     //set class current to the current nav item-text div
     const navItems = document.querySelectorAll(".nav-item");
