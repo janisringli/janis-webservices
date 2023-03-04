@@ -1,9 +1,10 @@
 .header-wrapper {
-  background: transparent;
+  /* TODO: reset to transperency after developing */
+  background: black;
   height: 100px;
   width: 100vw;
-  /* TODO: find solution for offset whiel scrolling*/
-  /* position: fixed; */
+  /* TODO: find solution for offset while scrolling*/
+  position: fixed;
 }
 .header-content {
   display: flex;

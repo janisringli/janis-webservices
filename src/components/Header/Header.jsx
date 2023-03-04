@@ -2,6 +2,21 @@ import "./Header.css";
 import logo from "../../assets/img/logo.png";
 
 function Header() {
+  function setCurrent() {
+    //set class current to the current nav item-text div
+    const navItems = document.querySelectorAll(".nav-item");
+    const navItemsText = document.querySelectorAll(".item-text");
+    navItems.forEach((item) => {
+      item.addEventListener("click", () => {
+        navItemsText.forEach((item) => {
+          item.classList.remove("current");
+        });
+
+        item.childNodes[0].classList.add("current");
+      });
+    });
+  }
+
   return (
     <div class="header-wrapper">
       <div className="header-content">
@@ -9,17 +24,17 @@ function Header() {
           <img src={logo} alt="" />
         </div>
         <div className="nav">
-          <a className="nav-item" href="#section1">
-            <div className="current">About Me</div>
+          <a onClick={setCurrent()} className="nav-item" href="#section1">
+            <div className="item-text current">About Me</div>
           </a>
-          <a className="nav-item" href="#section2">
-            <div>Services</div>
+          <a onClick={setCurrent()} className="nav-item" href="#section2">
+            <div className="item-text">Services</div>
           </a>
-          <a className="nav-item" href="#section3">
-            <div>Models</div>
+          <a onClick={setCurrent()} className="nav-item" href="#section3">
+            <div className="item-text">Models</div>
           </a>
-          <a className="nav-item" href="#section4">
-            <div>Contact</div>
+          <a onClick={setCurrent()} className="nav-item" href="#section4">
+            <div className="item-text">Contact</div>
           </a>
         </div>
       </div>
