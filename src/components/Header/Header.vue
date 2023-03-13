@@ -1,7 +1,4 @@
-import "./Header.css";
-
-function Header() {
-  return (
+<template>
     <div class="header-wrapper">
       <div className="header-content">
         <a className="header-item" href="#section1">
@@ -24,6 +21,7 @@ function Header() {
         </a>
       </div>
     </div>
-  );
-}
-export default Header;
+</template>
+
+<style src="./Header.css" lang="css" scoped></style>
+

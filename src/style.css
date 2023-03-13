@@ -1,0 +1,36 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+/* ----------------------Sections---------------------- */
+  /* TODO:rename section when clear what sections will be needed */
+  #section1 {
+    height: 600px;
+    background-color: pink;
+  }
+  
+  #section2 {
+    height: 600px;
+    background-color: yellow;
+  }
+  #section3 {
+    height: 600px;
+    background-color: rgb(145, 56, 70);
+  }
+  #section4 {
+    height: 600px;
+    background-color: rgb(48, 183, 201);
+  }
+  #section5 {
+    height: 600px;
+    background-color: rgb(137, 183, 52);
+  }
+  #section6 {
+    height: 600px;
+    background-color: pink;
+  }
+  
